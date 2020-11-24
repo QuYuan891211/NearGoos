@@ -30,6 +30,9 @@
 /webclient/public/images/background/home_2_4.png
 /webclient/public/images/background/home_3.png
 /webclient/public/Data
+/webclient/public/BUOY
+/webclient/public/STATION
+/webclient/public/images/product
 config
 /background/byQY/config/Config.ini
 /background/byQY/config/*.ini
@@ -39,5 +42,9 @@ config
 /webclient/public/STATION
 /webclient/public/BUOY
 /background/.idea
+<<<<<<< HEAD
 /background/.vscode
 /webclient/public/SHIP
+=======
+/background/.vscode
+>>>>>>> 9e857656e398c8522761ee012706bc528ca5534e

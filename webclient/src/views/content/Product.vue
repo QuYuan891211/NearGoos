@@ -101,7 +101,7 @@
                 <h2>Search</h2>
                 <h4>
                   Choose product categories, service application areas, product
-                  period, start date and end data from the following list to
+                  period, start date and end date from the following list to
                   start downloading your chosen products.
                 </h4>
               </div>
@@ -379,6 +379,7 @@ import {
 } from '@/api/index';
 import { IFileOption, DownLoad } from '@/common/download';
 import { BatchDownLoad } from '@/common/batchdownload';
+import { isIEClient } from './common';
 @Component({
   filters: {
     //TODO:[*] 19-12-09 注意在filters中无法使用this
@@ -651,6 +652,14 @@ export default class ProductView extends Vue {
     return typePath;
   }
   mounted() {
+    const isIE = isIEClient();
+    if (isIE) {
+      alert('Please use a non-IE browser');
+      this.$router.push({ path: '/' });
+    }
+    // if (isIE) {
+    //   this.$router.push({ path: 'home' });
+    // }
     this.openList = ['1', '2'];
     let myself = this;
     // 之前测试使用，现去掉
