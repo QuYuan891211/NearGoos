@@ -40,3 +40,4 @@ config
 /webclient/public/BUOY
 /background/.idea
 /background/.vscode
+/webclient/public/SHIP
